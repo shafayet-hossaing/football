@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/****************** Header-Area ******************/
+header {
+    background: #2D25A0;
+    width: 100%;
+}
+.header-area {
+    display: flex;
+    /* padding-top: 50px; */
+    padding-bottom: 50px;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.header-container{
+    width: 80%;
+    margin: auto;
+}
+.header-left{
+    width: 50%;
+}
+.header-right{
+    width: 50%;
+}
+.header-left h1{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 1.3em;
+    margin-top: 110px;
+}
+.btn{
+    text-decoration: none;
+    padding: 10px 24px;
+    background: #E02C6D;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .7s;
+    display: inline-block;
+    border-radius: 7px;
+}
+.btn:hover{
+    background-image: linear-gradient(to right, #eb3b5a,#fc5c65);
+    transform: scale(1.2)
+}
+.header-left a i{
+    margin-left: 8px;
+}
+.header-right img {
+    width: 100%;
+    margin-left: 50px;
+    transition: .5s;
+}
+.header-right img:hover {
+    transform: scale(1.2);
+}
+.header-right {
+    margin-top: 50px;
+}
+/************************* Players-area *************************/
+.players-area{
+    padding-top: 70px;
+}
+.players-container{
+    width: 75%;
+    margin: auto;
+}
+.players{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 27px;
+    grid-column-gap: 30px;
+    margin-bottom: 150px;
+}
+.player{
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player img{
+    width: 100%;
+}
+.player p{
+    margin: 0;
+    color: #6C6C6C;
+}
+.player h4{
+    color: #18191F;
+    font-size: 28px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+/************************* Highlights-area *************************/
+.highlights-area{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap : 66px;
+    margin-bottom: 158px;
+}
+.highlights-container{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+.highlights-left h1{
+    font-size: 48px;
+    text-transform: capitalize;
+    margin: 0;
+    margin-top: 90px;
+    line-height: 60px;
+}
+.highlights-left p{
+    line-height: 28px;
+    color: #6C6C6C;
+}
+.highlights-right img{
+    width: 100%;
+}
+.highlights-left a i{
+    margin-left: 8px;
+}
+/************************* Argentina-area *************************/
+.argentina{
+    background-image: url("images/messi.webp");
+    padding: 210px 30px;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+.argentina h1{
+    padding: 20px 30px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 10px 10px 10px grey;
+    border-radius: 15px;
+}
+/************************* Messi-area *************************/
+#messi-section{
+    padding: 90px 0 0 0;
+}
+.messi-container{
+    width: 80%;
+    margin: auto;
+}
+#messi{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 60px;
+}
+
+#messi-area-1 h3{
+    color:white;
+    margin: 0;
+}
+.messi-area img{
+    width: 100%;
+    transition: 1s;
+}
+.messi-area img:hover{
+    transform: rotate(180deg)
+}
+/************************* Footer-area *************************/
+.footer-container{
+    /* width: 30%;
+    margin: auto; */
+    text-align: center;
+    padding-top: 50px;
+}
+.footer-container img{
+    width: 35%;
+}
+.footer-middle{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer-middle a{
+    margin-right: 14px;
+    display: inline-block;
+    color: #9d9fa3;
+    width: 32px;
+    height: 32px;
+    line-height:32px;
+    border-radius: 50%;
+    background: #eaebee;
+    transition: .5s;
+}
+.footer-middle a:first-child:hover{
+    background: #3f729b;
+    color: white;
+}
+.footer-middle a:nth-child(2):hover{
+    background: #ea4c89;
+    color: white;
+}
+.footer-middle a:nth-child(3):hover{
+    background: #00acee;
+    color: white;
+}
+.footer-middle a:nth-child(4):hover{
+    background: #FF0000;
+    color: white;
+}
+/******************** Media-Query for 1169px *********************/
+@media only screen and (max-width: 992px){
+    /* Header-area */
+    .header-area{
+        flex-direction: column;
+    }
+    .header-left, .header-right{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .header-left h1{
+        font-size: 35px;
+        margin-top: 100px;
+    }
+    .header-right img {
+        width: 80%;
+        margin-left: 50px;
+    }
+    /* Players-area */
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 100px;
+    }
+    /* Highlights-area */
+    .highlights-area{
+        grid-template-columns: repeat(1, 1fr);
+        /* text-align: center; */
+    }
+    .highlights-area{
+        margin-bottom: 50px;
+    }
+    .highlights-left h1{
+        font-size: 38px;
+    }
+    #messi{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }    
+}
+/******************** Media-Query for 668px *********************/
+@media only screen and (max-width: 668px){
+    /* Header-area */
+    .header-left h1{
+        font-size: 35px;
+    }
+    .header-right img {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .header-left, .header-right{
+        text-align: left;
+    }
+    /* Players-area */
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 50px;
+    }
+    .players-container{
+        width: 90%;
+        margin: auto;
+    }
+    #messi{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* Argentina */
+    .argentina{
+        padding: 80px 20px;
+    }
+}
+
