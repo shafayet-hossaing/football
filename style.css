@@ -29,10 +29,10 @@ header {
 }
 .header-left h1{
     color: white;
-    font-size: 50px;
+    font-size: 55px;
     font-weight: bold;
     text-transform: capitalize;
-    line-height: 1.3em;
+    line-height: 1.2em;
     margin-top: 110px;
 }
 .btn{
@@ -208,7 +208,7 @@ header {
     background: #FF0000;
     color: white;
 }
-/******************** Media-Query for 1169px *********************/
+/******************** Media-Query for 992px *********************/
 @media only screen and (max-width: 992px){
     /* Header-area */
     .header-area{
@@ -221,7 +221,7 @@ header {
     }
     .header-left h1{
         font-size: 35px;
-        margin-top: 100px;
+        margin-top: 80px;
     }
     .header-right img {
         width: 80%;
@@ -253,6 +253,7 @@ header {
     /* Header-area */
     .header-left h1{
         font-size: 35px;
+        margin-top: 40px;
     }
     .header-right img {
         width: 100%;
